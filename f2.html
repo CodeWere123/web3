@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Форма с полями ввода</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			background-color: #f0f0f0;
+		}
+
+		.form {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.3);
+		}
+
+		.form-label {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.form-input {
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+
+		.form-button {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			margin-top: 20px;
+		}
+
+		.form-button:hover {
+			background-color: #3e8e41;
+		}
+
+		.back-button {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			padding: 10px 20px;
+			background-color: #ccc;
+			color: #000;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+
+		.back-button:hover {
+			background-color: #999;
+		}
+	</style>
+</head>
+<body>
+    <h1>Анализ друзей в вк</h1>
+    <P>Отправьте ссылку на вашу страницу для анализа</P>
+
+
+	<div class="container">
+		<form class="form" action="" method="post">
+			<label for="input1" class="form-label">Ваша страница:</label>
+			<input type="text" id="input1" name="input1" class="form-input">
+			<button type="submit" class="form-button">Анализ друзей</button>
+		</form>
+		<a href="/metods" class="back-button">Назад</a>
+	</div>
+</body>
+</html>

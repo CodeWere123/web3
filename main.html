@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Две квадратные картинки</title>
+    <style>
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: row;
+			height: 80%;
+		}
+
+		.image {
+			width: 200px;
+			height: 200px;
+			margin: 0 50px;
+		}
+
+		.return-link {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background-color: #ccc;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			color: #000;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		.caption {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 20px;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+
+    </style>
+</head>
+<body>
+<a href="/user/{{username}}" class="return-link">&#8592;</a>
+<div class="container">
+    <div>
+        <a href="/f1"><img src="../static/img/rk.png" alt="Image 1" class="image"></a>
+        <div class="caption">6 рукопожатий в вк</div>
+    </div>
+    <div>
+        <a href="/f2"><img src="../static/img/vk.png" alt="Image 2" class="image"></a>
+        <div class="caption">Анализ друзей</div>
+    </div>
+    <div>
+        <a href="/f3"><img src="../static/img/id.png" alt="Image 3" class="image"></a>
+        <div class="caption">Узнать ID страницы</div>
+    </div>
+</div>
+</body>
+</html>

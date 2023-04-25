@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Личный кабинет</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        margin-top: 50px;
+        font-size: 36px;
+      }
+      p {
+        font-size: 24px;
+        margin-top: 30px;
+      }
+      .button {
+        display: inline-block;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 50px;
+        margin-top: 30px;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>{{ username }}</h1>
+    <p>Ваш токен: {{ token }}</p>
+    <a href="/metods" class="button">Список функций</a>
+    <br>
+    <a href="/change_password" class="button">   Изменить токен   </a>
+    <br>
+    <br>
+    <a href="/reset_token" onclick="alert('токен успешно сброшен')" class="button">Сбросить токен</a>
+    <br>
+    <a href="/logout" class="button">Выйти из аккаунта</a>
+  </body>
+</html>

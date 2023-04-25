@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Текст в центре с кнопкой</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.container {
+			text-align: center;
+		}
+
+		.text {
+			font-size: 20px;
+			font-weight: bold;
+			margin-bottom: 50px;
+		}
+
+		.back-button {
+			padding: 10px 20px;
+			background-color: #ccc;
+			color: #000;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+
+		}
+
+		.back-button:hover {
+			background-color: #999;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<p class="text">{{res}}</p>
+		<a href="/f1" class="back-button">Назад</a>
+	</div>
+</body>
+</html>
+
